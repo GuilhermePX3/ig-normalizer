@@ -4,7 +4,10 @@ import argparse
 import sys
 from pathlib import Path
 
-from .normalizer import process_directory, normalize_string
+try:
+    from ig_normalizer.normalizer import process_directory, normalize_string
+except ImportError:
+    from normalizer import process_directory, normalize_string  # PyInstaller fallback
 
 
 def _build_parser() -> argparse.ArgumentParser:

@@ -9,8 +9,8 @@ from pathlib import Path
 block_cipher = None
 
 a = Analysis(
-    ['src/ig_normalizer/__main__.py'],
-    pathex=[str(Path('src').resolve())],
+    ['src/ig_normalizer/cli.py'],
+    pathex=[str(Path('src').resolve()), str(Path('src/ig_normalizer').resolve())],
     binaries=[],
     datas=[],
     hiddenimports=[
@@ -18,6 +18,7 @@ a = Analysis(
         'ig_normalizer.cli',
         'ig_normalizer.normalizer',
         'unicodedata',
+        'normalizer',
     ],
     hookspath=[],
     hooksconfig={},
