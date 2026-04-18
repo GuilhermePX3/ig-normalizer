@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ig-normalizer"
+version = "1.0.0"
+description = "Remove accents and special characters from filenames and file contents"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+dependencies = []
+
+[project.scripts]
+ig-normalizer = "ig_normalizer.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
