@@ -55,7 +55,6 @@ WizardResizable=no
 
 ; Privileges — required for Program Files + HKLM registry
 PrivilegesRequired=admin
-MinVersion=6.1          ; Windows 7+
 ArchitecturesAllowed=x64compatible
 ArchitecturesInstallIn64BitMode=x64compatible
 
