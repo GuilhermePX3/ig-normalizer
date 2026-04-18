@@ -51,7 +51,6 @@ OutputBaseFilename=ig-normalizer-setup-{#MyAppVersion}
 Compression=lzma2/ultra64
 SolidCompression=yes
 WizardStyle=modern
-WizardResizable=no
 
 ; Privileges — required for Program Files + HKLM registry
 PrivilegesRequired=admin
@@ -68,8 +67,8 @@ Name: "brazilianportuguese"; MessagesFile: "compiler:Languages\BrazilianPortugue
 Name: "english"; MessagesFile: "compiler:Default.isl"
 
 [Tasks]
-Name: "contextmenu"; Description: "Adicionar ao menu de contexto do Windows Explorer"; GroupDescription: "Integração com o Explorer:"; Flags: checked
-Name: "addtopath";   Description: "Adicionar ao PATH do sistema (usar no terminal)";    GroupDescription: "Integração com o Explorer:"; Flags: checked
+Name: "contextmenu"; Description: "Adicionar ao menu de contexto do Windows Explorer"; GroupDescription: "Integracao com o Explorer:"
+Name: "addtopath";   Description: "Adicionar ao PATH do sistema (usar no terminal)";    GroupDescription: "Integracao com o Explorer:"
 
 [Files]
 ; Main executable — single self-contained binary (no Python required)
@@ -91,11 +90,6 @@ Root: HKLM; Subkey: "SOFTWARE\Classes\Directory\shell\ig-normalizer"; \
 Root: HKLM; Subkey: "SOFTWARE\Classes\Directory\shell\ig-normalizer"; \
     ValueType: string; ValueName: "Icon"; \
     ValueData: "{app}\{#MyAppExeName},0"; \
-    Tasks: contextmenu
-
-Root: HKLM; Subkey: "SOFTWARE\Classes\Directory\shell\ig-normalizer"; \
-    ValueType: string; ValueName: "AppliesTo"; \
-    ValueData: "System.FileName:*"; \
     Tasks: contextmenu
 
 Root: HKLM; Subkey: "SOFTWARE\Classes\Directory\shell\ig-normalizer\command"; \
