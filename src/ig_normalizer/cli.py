@@ -92,7 +92,7 @@ Examples:
     parser.add_argument(
         "--version",
         action="version",
-        version="ig-normalizer 1.0.1",
+        version="ig-normalizer 1.0.2",
     )
 
     return parser

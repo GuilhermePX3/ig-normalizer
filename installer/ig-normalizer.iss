@@ -18,7 +18,7 @@
 ; ============================================================
 
 #define MyAppName      "ig-normalizer"
-#define MyAppVersion   "1.0.1"
+#define MyAppVersion   "1.0.2"
 #define MyAppPublisher "igpsp"
 #define MyAppURL       "https://github.com/igpsp/ig-normalizer"
 #define MyAppExeName   "ig-normalizer.exe"
