@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "ig-normalizer"
-version = "1.0.5"
+version = "1.0.6"
 description = "Remove accents and special characters from filenames and file contents"
 readme = "README.md"
 requires-python = ">=3.8"
